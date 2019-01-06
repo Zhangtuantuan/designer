@@ -28,7 +28,7 @@ $(function(){
         var windowURL = window.URL || window.webkitURL;
         var dataURL;
         var $img = $("img");
-
+        
         if (fileObj && fileObj.files && fileObj.files[0]) {
             dataURL = windowURL.createObjectURL(fileObj.files[0]);
             $img.attr('src', dataURL);
